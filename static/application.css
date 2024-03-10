@@ -127,3 +127,10 @@ textarea {
 #messages li.error {
 	background: rgba(102,8,0,0.8); /* This color is for a specific effect; kept as is */
 }
+
+#box1 a.logo, #box1 a.logo:visited {
+	display: inline-block;
+	background: url(logo.png);
+	width: 126px;
+	height: 42px;
+}
