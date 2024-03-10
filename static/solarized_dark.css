@@ -1,59 +1,57 @@
 /*
-
-Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
-
+Updated Style for a Lighter Theme Inspired by Visual Studio Code
 */
 
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #0b141c;
-  color: #839496;
+  background: #f5f5f5; /* Lighter background */
+  color: #383a42; /* Darker text color for better readability */
 }
 
 .hljs-comment,
 .hljs-quote {
-  color: #586e75;
+  color: #a0a1a7; /* Softer color for comments */
 }
 
-/* Solarized Green */
+/* Updated to VS Code-like colors */
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-addition {
-  color: #859900;
+  color: #007acc; /* Brighter blue for keywords */
 }
 
-/* Solarized Cyan */
+/* Slightly darker cyan for numbers and strings for better contrast */
 .hljs-number,
 .hljs-string,
 .hljs-meta .hljs-meta-string,
 .hljs-literal,
 .hljs-doctag,
 .hljs-regexp {
-  color: #2aa198;
+  color: #0366d6; 
 }
 
-/* Solarized Blue */
+/* More vivid blue for titles and names */
 .hljs-title,
 .hljs-section,
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #268bd2;
+  color: #005cc5;
 }
 
-/* Solarized Yellow */
+/* Darker yellow for attributes and types */
 .hljs-attribute,
 .hljs-attr,
 .hljs-variable,
 .hljs-template-variable,
 .hljs-class .hljs-title,
 .hljs-type {
-  color: #b58900;
+  color: #d19a66;
 }
 
-/* Solarized Orange */
+/* Orange for symbols and meta, adjusted for visibility */
 .hljs-symbol,
 .hljs-bullet,
 .hljs-subst,
@@ -62,17 +60,17 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-selector-attr,
 .hljs-selector-pseudo,
 .hljs-link {
-  color: #cb4b16;
+  color: #d18616;
 }
 
-/* Solarized Red */
+/* Red for built-ins and deletions, slightly darker for readability */
 .hljs-built_in,
 .hljs-deletion {
-  color: #dc322f;
+  color: #e45649;
 }
 
 .hljs-formula {
-  background: #073642;
+  background: #efefef; /* Lighter background for formulas */
 }
 
 .hljs-emphasis {
