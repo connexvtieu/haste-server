@@ -3,10 +3,10 @@ services:
   haste-server:
     build: .
     environment:
-      - STORAGE_TYPE=memcached
-      - STORAGE_HOST=memcached
-      - STORAGE_PORT=11211
+     - STORAGE_TYPE=file
+     - STORAGE_FILEPATH=data
     ports:
-      - 7777:7777
-  memcached:
-    image: memcached:latest
+     - 80:7777
+    volumes:
+      - ./data:/usr/src/app/data
+    user: "$DOCKER_USER"
