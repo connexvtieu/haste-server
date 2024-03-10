@@ -1,59 +1,55 @@
-/*
-
-Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
-
-*/
+/* Updated Style with Visual Studio Environment Colors */
 
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #002b36;
-  color: #839496;
+  background: #F7F3F2; /* Updated from #002b36 to "Plain Text" Background */
+  color: #000000; /* Updated from #839496 to "Plain Text" Foreground */
 }
 
 .hljs-comment,
 .hljs-quote {
-  color: #586e75;
+  color: #008000; /* Updated from #586e75 to "Comment" */
 }
 
-/* Solarized Green */
+/* Updated to "Keyword" */
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-addition {
-  color: #859900;
+  color: #8F0000; /* Updated from #859900 */
 }
 
-/* Solarized Cyan */
+/* Updated to "String" */
 .hljs-number,
 .hljs-string,
 .hljs-meta .hljs-meta-string,
 .hljs-literal,
 .hljs-doctag,
 .hljs-regexp {
-  color: #2aa198;
+  color: #1515A3; /* Updated from #2aa198 */
 }
 
-/* Solarized Blue */
+/* Updated to "User Types" */
 .hljs-title,
 .hljs-section,
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #268bd2;
+  color: #AF912B; /* Updated from #268bd2 */
 }
 
-/* Solarized Yellow */
+/* Updated to "HTML Attribute" */
 .hljs-attribute,
 .hljs-attr,
 .hljs-variable,
 .hljs-template-variable,
 .hljs-class .hljs-title,
 .hljs-type {
-  color: #b58900;
+  color: #25409D; /* Updated from #b58900 */
 }
 
-/* Solarized Orange */
+/* Updated to "CSS Selector" */
 .hljs-symbol,
 .hljs-bullet,
 .hljs-subst,
@@ -62,17 +58,17 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-selector-attr,
 .hljs-selector-pseudo,
 .hljs-link {
-  color: #cb4b16;
+  color: #000080; /* Updated from #cb4b16 */
 }
 
-/* Solarized Red */
+/* Updated to "Preprocessor Keyword" */
 .hljs-built_in,
 .hljs-deletion {
-  color: #dc322f;
+  color: #FF0000; /* Updated from #dc322f */
 }
 
 .hljs-formula {
-  background: #073642;
+  background: #E0CCD9; /* Updated from #073642 to "Brace Matching (Rectangle)" Background */
 }
 
 .hljs-emphasis {
