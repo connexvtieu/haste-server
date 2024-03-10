@@ -21,55 +21,23 @@ textarea {
 	margin-bottom: 0;
 }
 
-/* the line numbers */
-
-#linenos {
-  color: #AF912B; /* Updated to "Line Numbers" */
-	z-index: -1000;
-	position: absolute;
-	top: 20px;
-	left: 0px;
-	width: 30px;
-	font-size: 13px;
-	font-family: monospace;
-	text-align: right;
-	user-select: none;
-}
-
-/* code box when locked */
-
-#box {
-	padding: 0px;
-	margin: 0px;
-	width: 100%;
-	border: 0px;
-	outline: none;
-	font-size: 13px;
-  overflow: inherit;
-}
-
-#box code {
-	padding: 0px;
-	background: transparent !important;
-}
-
 /* key */
 
 #key {
 	position: fixed;
 	top: 0px;
 	right: 0px;
-	z-index: +1000;
+	z-index: +1000; /* watch out */
 }
 
 #box1 {
 	padding: 5px;
 	text-align: center;
-	background: #E0CCD9; /* Updated to "Brace Matching (Rectangle)" Background */
+	background: #00222b;
 }
 
 #box2 {
-	background: #08323c; /* This color doesn't have a direct match; kept as is */
+	background: #08323c;
 	font-size: 0px;
 	padding: 0px 5px;
 }
@@ -85,23 +53,54 @@ textarea {
 	background-position: 0 bottom;
 }
 
-/* Updated button and label backgrounds to match "User Types" background */
-#box2 .function, 
+#box2 .function {
+	background: url(function-icons.png);
+	width: 32px;
+	height: 37px;
+	display: inline-block;
+	position: relative;
+}
+
+#box2 .link embed {
+	vertical-align: bottom; /* fix for zeroClipboard style */
+}
+
+#box2 .function.enabled:hover {
+	cursor: hand;
+	cursor: pointer;
+}
+
+#pointer {
+	display: block;
+	height: 5px;
+	width: 10px;
+	background: url(hover-dropdown-tip.png);
+	bottom: 0px;
+	position: absolute;
+	margin: auto;
+	left: 0px;
+	right: 0px;
+}
+
 #box3, #messages li {
-	background: #AF912B; /* Updated to "User Types" */
+	background: #173e48;
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 10px 15px;
+	user-select: none;
 }
 
 #box3 .label, #messages li {
-	color: #FFFFFF; /* Updated to maintain contrast */
+	color: #fff;
 	font-weight: bold;
 }
 
 #box3 .shortcut {
-	color: #c4dce3; /* Kept as is for readability */
+	color: #c4dce3;
 	font-weight: normal;
 }
 
-/* Function button states */
 #box2 .function.save { background-position: -5px top; }
 #box2 .function.enabled.save { background-position: -5px center; }
 #box2 .function.enabled.save:hover { background-position: -5px bottom; }
@@ -133,9 +132,13 @@ textarea {
 }
 
 #messages li {
-	background:rgba(23,62,72,0.8); /* Semi-transparent; kept for overlay effect */
+	background:rgba(23,62,72,0.8);
 	margin:0 auto;
 	list-style:none;
+}
+
+#messages li.error {
+	background:rgba(102,8,0,0.8);
 }
 
 #messages li.error {
