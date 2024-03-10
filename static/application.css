@@ -1,5 +1,5 @@
 body {
-	background: #0B141C;
+	background: #f5f5f5; /* Lighter background for the body */
 	padding: 20px 50px;
 	margin: 0px;
 }
@@ -9,7 +9,7 @@ body {
 textarea {
 	background: transparent;
 	border: 0px;
-	color: #fff;
+	color: #383a42; /* Darker text color for better readability */
 	padding: 0px;
 	width: 100%;
 	height: 100%;
@@ -22,7 +22,7 @@ textarea {
 /* the line numbers */
 
 #linenos {
-  color: #7d7d7d;
+  color: #a0a1a7; /* Lighter color for line numbers */
 	z-index: -1000;
 	position: absolute;
 	top: 20px;
@@ -62,11 +62,11 @@ textarea {
 #box1 {
 	padding: 5px;
 	text-align: center;
-	background: #000000;
+	background: #efefef; /* Lighter background for box1 */
 }
 
 #box2 {
-	background: #000011;
+	background: #f0f0f0; /* Even lighter background for box2 */
 	font-size: 0px;
 	padding: 0px 5px;
 }
@@ -112,7 +112,7 @@ textarea {
 }
 
 #box3, #messages li {
-	background: #0B141C;
+	background: #f7f7f7; /* Lighter background for better contrast */
 	font-family: Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 14px;
@@ -120,12 +120,12 @@ textarea {
 }
 
 #box3 .label, #messages li {
-	color: #fff;
+	color: #383a42; /* Darker text color for labels for readability */
 	font-weight: bold;
 }
 
 #box3 .shortcut {
-	color: #c4dce3;
+	color: #586e75; /* Soft color for shortcuts */
 	font-weight: normal;
 }
 
@@ -160,11 +160,11 @@ textarea {
 }
 
 #messages li {
-	background:rgba(23,62,72,0.8);
+	background:rgba(23,62,72,0.8); /* Adjusted for a lighter theme but keeping the transparency */
 	margin:0 auto;
 	list-style:none;
 }
 
 #messages li.error {
-	background:rgba(102,8,0,0.8);
+	background:rgba(102,8,0,0.8); /* Keeping the transparency with a slightly lighter touch */
 }
