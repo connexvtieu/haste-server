@@ -1,55 +1,59 @@
-/* Updated Style with Visual Studio Environment Colors */
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
 
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #F7F3F2; /* Updated from #002b36 to "Plain Text" Background */
-  color: #000000; /* Updated from #839496 to "Plain Text" Foreground */
+  background: #0b141c;
+  color: #839496;
 }
 
 .hljs-comment,
 .hljs-quote {
-  color: #008000; /* Updated from #586e75 to "Comment" */
+  color: #586e75;
 }
 
-/* Updated to "Keyword" */
+/* Solarized Green */
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-addition {
-  color: #8F0000; /* Updated from #859900 */
+  color: #859900;
 }
 
-/* Updated to "String" */
+/* Solarized Cyan */
 .hljs-number,
 .hljs-string,
 .hljs-meta .hljs-meta-string,
 .hljs-literal,
 .hljs-doctag,
 .hljs-regexp {
-  color: #1515A3; /* Updated from #2aa198 */
+  color: #2aa198;
 }
 
-/* Updated to "User Types" */
+/* Solarized Blue */
 .hljs-title,
 .hljs-section,
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #AF912B; /* Updated from #268bd2 */
+  color: #268bd2;
 }
 
-/* Updated to "HTML Attribute" */
+/* Solarized Yellow */
 .hljs-attribute,
 .hljs-attr,
 .hljs-variable,
 .hljs-template-variable,
 .hljs-class .hljs-title,
 .hljs-type {
-  color: #25409D; /* Updated from #b58900 */
+  color: #b58900;
 }
 
-/* Updated to "CSS Selector" */
+/* Solarized Orange */
 .hljs-symbol,
 .hljs-bullet,
 .hljs-subst,
@@ -58,17 +62,17 @@
 .hljs-selector-attr,
 .hljs-selector-pseudo,
 .hljs-link {
-  color: #000080; /* Updated from #cb4b16 */
+  color: #cb4b16;
 }
 
-/* Updated to "Preprocessor Keyword" */
+/* Solarized Red */
 .hljs-built_in,
 .hljs-deletion {
-  color: #FF0000; /* Updated from #dc322f */
+  color: #dc322f;
 }
 
 .hljs-formula {
-  background: #E0CCD9; /* Updated from #073642 to "Brace Matching (Rectangle)" Background */
+  background: #073642;
 }
 
 .hljs-emphasis {
