@@ -62,7 +62,7 @@ textarea {
 #box1 {
 	padding: 5px;
 	text-align: center;
-	background: #efefef; /* Lighter background for box1 */
+	background: black; /* Lighter background for box1 */
 }
 
 #box2 {
