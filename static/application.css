@@ -1,5 +1,5 @@
 body {
-	background: #F7F3F2; /* Changed from #002B36 to "Plain Text" Background */
+	background: #0B141C;
 	padding: 20px 50px;
 	margin: 0px;
 }
@@ -9,7 +9,7 @@ body {
 textarea {
 	background: transparent;
 	border: 0px;
-	color: #000000; /* Changed from #fff to "Plain Text" Foreground */
+	color: #fff;
 	padding: 0px;
 	width: 100%;
 	height: 100%;
@@ -17,14 +17,12 @@ textarea {
 	outline: none;
 	resize: none;
 	font-size: 13px;
-	margin-top: 0;
-	margin-bottom: 0;
 }
 
 /* the line numbers */
 
 #linenos {
-	color: #AF912B; /* Updated to "Line Numbers" */
+  color: #7d7d7d;
 	z-index: -1000;
 	position: absolute;
 	top: 20px;
@@ -33,7 +31,6 @@ textarea {
 	font-size: 13px;
 	font-family: monospace;
 	text-align: right;
-	user-select: none;
 }
 
 /* code box when locked */
@@ -45,7 +42,7 @@ textarea {
 	border: 0px;
 	outline: none;
 	font-size: 13px;
-	overflow: inherit;
+  overflow: inherit;
 }
 
 #box code {
@@ -65,16 +62,42 @@ textarea {
 #box1 {
 	padding: 5px;
 	text-align: center;
-	background: #E0CCD9; /* Updated from #00222b to "Brace Matching (Rectangle)" Background */
+	background: #000000;
 }
 
 #box2 {
-	background: #AF912B; /* Updated from #08323c to "User Types" */
+	background: #000011;
 	font-size: 0px;
 	padding: 0px 5px;
 }
 
-/* No changes to logo and function icon backgrounds since they use images */
+#box1 a.logo, #box1 a.logo:visited {
+	display: inline-block;
+	background: url(logo.png);
+	width: 126px;
+	height: 42px;
+}
+
+#box1 a.logo:hover {
+	background-position: 0 bottom;
+}
+
+#box2 .function {
+	background: url(function-icons.png);
+	width: 32px;
+	height: 37px;
+	display: inline-block;
+	position: relative;
+}
+
+#box2 .link embed {
+	vertical-align: bottom; /* fix for zeroClipboard style */
+}
+
+#box2 .function.enabled:hover {
+	cursor: hand;
+	cursor: pointer;
+}
 
 #pointer {
 	display: block;
@@ -89,48 +112,59 @@ textarea {
 }
 
 #box3, #messages li {
-	background: #25409D; /* Changed from #173e48 to "HTML Attribute" */
+	background: #0B141C;
 	font-family: Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 14px;
 	padding: 10px 15px;
-	user-select: none;
 }
 
 #box3 .label, #messages li {
-	color: #FFFFFF; /* Kept as is for readability */
+	color: #fff;
 	font-weight: bold;
 }
 
 #box3 .shortcut {
-	color: #c4dce3; /* This specific color doesn't have a direct match; kept as is */
+	color: #c4dce3;
 	font-weight: normal;
 }
 
-/* Function icons positions unchanged */
+#box2 .function.save { background-position: -5px top; }
+#box2 .function.enabled.save { background-position: -5px center; }
+#box2 .function.enabled.save:hover { background-position: -5px bottom; }
+
+#box2 .function.new { background-position: -42px top; }
+#box2 .function.enabled.new { background-position: -42px center; }
+#box2 .function.enabled.new:hover { background-position: -42px bottom; }
+
+#box2 .function.duplicate { background-position: -79px top; }
+#box2 .function.enabled.duplicate { background-position: -79px center; }
+#box2 .function.enabled.duplicate:hover { background-position: -79px bottom; }
+
+#box2 .function.raw { background-position: -116px top; }
+#box2 .function.enabled.raw { background-position: -116px center; }
+#box2 .function.enabled.raw:hover { background-position: -116px bottom; }
+
+#box2 .function.twitter { background-position: -153px top; }
+#box2 .function.enabled.twitter { background-position: -153px center; }
+#box2 .function.enabled.twitter:hover { background-position: -153px bottom; }
+#box2 .button-picture{ border-width: 0; font-size: inherit; }
 
 #messages {
-	position: fixed;
-	top: 0px;
-	right: 138px;
-	margin: 0;
-	padding: 0;
-	width: 400px;
+	position:fixed;
+	top:0px;
+	right:138px;
+	margin:0;
+	padding:0;
+	width:400px;
 }
 
 #messages li {
-	background: rgba(23,62,72,0.8); /* This color is for a specific effect; kept as is */
-	margin: 0 auto;
-	list-style: none;
+	background:rgba(23,62,72,0.8);
+	margin:0 auto;
+	list-style:none;
 }
 
 #messages li.error {
-	background: rgba(102,8,0,0.8); /* This color is for a specific effect; kept as is */
-}
-
-#box1 a.logo, #box1 a.logo:visited {
-	display: inline-block;
-	background: url(logo.png);
-	width: 126px;
-	height: 42px;
+	background:rgba(102,8,0,0.8);
 }
